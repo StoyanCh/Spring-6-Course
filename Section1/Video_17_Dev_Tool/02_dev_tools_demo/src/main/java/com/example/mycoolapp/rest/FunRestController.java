@@ -12,4 +12,19 @@ public class FunRestController {
     public String sayHello() {
         return "Hello World";
     }
+
+
+    //Exposing new ENDPOINT
+    @GetMapping("/workout") //HTTP GET Request
+    public String getDailyWorkout() {
+        return "Run A HArd 5k!";
+    }
+
+    //Exposing a new ENDPOINT
+
+    @GetMapping("/fortune")
+    public static String getDailyFortune() {
+        return "Today is your lucky day!";
+    }
+
 }
